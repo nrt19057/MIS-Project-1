@@ -1,10 +1,11 @@
 # MIS-Project-1
 
 Team Name: Terry Teas
-Sydney James - [srj44873/MISt-4610-Project-1](https://github.com/srj44873/MISt-4610-Project-1)
-Mary Earhart - @marykearhart
-Derek Quinlan - https://github.com/repos?q=owner%3A%40me#:~:text=DerekQ111/Group5%2DMIST4610%2DProject1
-Regan Taylor - https://github.com/nrt19057/MIS-Project-1
+Sydney James -  [@srj44873](https://github.com/srj44873)
+Mary Earhart -  [@marykearhart](https://github.com/marykearhart)
+Derek Quinlan - [@derekq111](https://github.com/derekq111)
+Regan Taylor - [@nrt19057](https://github.com/nrt19057)
+
 
 Scenerio Description: 
 Divided the mechanics of a loaded teas franchise into a rough 11 entities 
