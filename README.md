@@ -1,15 +1,19 @@
 # MIS-Project-1
 
+TEAM NAME AND MEMBERS:
 Team Name: Terry Teas
 Sydney James -  [@srj44873](https://github.com/srj44873)
 Mary Earhart -  [@marykearhart](https://github.com/marykearhart)
 Derek Quinlan - [@derekq111](https://github.com/derekq111)
 Regan Taylor - [@nrt19057](https://github.com/nrt19057)
 
+SCENARIO DESCRIPTION:
+Our data model is for a fictional company called "Terry Teas" the company is a tea shop selling nutrition teas. The database is for the day to day operation of the company. The database includes tables such as Customers, Orders, OrderDetails, LoyaltyPrograms, etc. Our database would help a manager visualise simple things such as listing all customer names, or a more complex query such as total quantity sold for each product. 
 
-Scenerio Description: 
-Divided the mechanics of a loaded teas franchise into a rough 11 entities 
-Some of our company specifics:
-Multiple store locations 
-Customers can order from our store, but we order inventory from the home base of the corporation (Herbalife)
-We want our customers to be able to receive select discounts (birthday, student, military, etc.)
+Data Model:
+
+Data Dictionary:
+
+Ten Queries:
+
+Database information:
