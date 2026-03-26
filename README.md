@@ -1,6 +1,7 @@
 # MIS-Project-1
 
-TEAM NAME AND MEMBERS:
+#TEAM NAME AND MEMBERS:
+
 Team Name: Terry Teas
 Sydney James -  [@srj44873](https://github.com/srj44873)
 Mary Earhart -  [@marykearhart](https://github.com/marykearhart)
