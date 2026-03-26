@@ -1,7 +1,7 @@
 # MIS-Project-1
 
 Team Name: Terry Teas
-Sydney James -
+Sydney James - srj44873/MISt-4610-Project-1
 Mary Earhart -
 Derek Quinlan -
 
