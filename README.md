@@ -3,7 +3,7 @@
 Team Name: Terry Teas
 Sydney James - [srj44873/MISt-4610-Project-1](https://github.com/srj44873/MISt-4610-Project-1)
 Mary Earhart - @marykearhart
-Derek Quinlan -
+Derek Quinlan - https://github.com/repos?q=owner%3A%40me#:~:text=DerekQ111/Group5%2DMIST4610%2DProject1
 Regan Taylor - https://github.com/nrt19057/MIS-Project-1
 
 Scenerio Description: 
