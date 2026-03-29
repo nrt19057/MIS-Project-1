@@ -18,6 +18,7 @@ Regan Taylor - [@nrt19057](https://github.com/nrt19057)
 Our data model is for a fictional company called "Terry Teas" the company is a tea shop selling nutrition teas. The database is for the day to day operation of the company. The database includes tables such as Customers, Orders, OrderDetails, LoyaltyPrograms, etc. Our database would help a manager visualise simple things such as listing all customer names, or a more complex query such as total quantity sold for each product. 
 
 ## Data Model
+<img width="1060" height="413" alt="Screenshot 2026-03-29 at 4 11 20 PM" src="https://github.com/user-attachments/assets/47a9a5a7-d151-457f-a64f-f658ee9c2f93" />
 
 Explanation of Data Model:
 Our data model represents the structure of a retail and inventory management system that tracks customers, sales, products, suppliers, employees, and store operations.
