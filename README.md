@@ -66,6 +66,7 @@ Overall, this data model efficiently captures the relationships between customer
 <img width="643" height="302" alt="Screenshot 2026-03-29 at 4 30 29 PM" src="https://github.com/user-attachments/assets/c5a17fa4-2fda-4eed-8b50-e705278b1f6c" />
 
 <img width="659" height="248" alt="Screenshot 2026-03-29 at 4 30 49 PM" src="https://github.com/user-attachments/assets/acc3165a-544e-4fab-9658-6e9513fba186" />
+
 ## Queries
 
 Query 1 - Simple Question: What customers are currently in the database? Why it matters: A manager may want a full customer list for outreach, customer service, or record review.
