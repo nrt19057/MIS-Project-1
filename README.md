@@ -68,44 +68,106 @@ Overall, this data model efficiently captures the relationships between customer
 <img width="659" height="248" alt="Screenshot 2026-03-29 at 4 30 49 PM" src="https://github.com/user-attachments/assets/acc3165a-544e-4fab-9658-6e9513fba186" />
 
 ## Queries
+<img width="722" height="307" alt="Screenshot 2026-03-29 at 4 54 51 PM" src="https://github.com/user-attachments/assets/fc080ab7-17ba-41d6-8d43-c095fa688ede" />
 
-Query 1 - Simple Question: What customers are currently in the database? Why it matters: A manager may want a full customer list for outreach, customer service, or record review.
+  1. Query 1 - Simple Question: What customers are currently in the database? Why it matters: A manager may want a full customer list for outreach, customer service, or record review.
 
 SELECT customerID, firstName, lastName, emailAddress, phoneNumber FROM Customers ORDER BY lastName, firstName;
 
-Query 2 - Simple Question: What products does the business carry? Why it matters: A manager may want a current list of products for catalog review, sales planning, or inventory coordination.
+Query Response: 
+
+Natural Language Description: This query retrieves all customers in the database, displaying their ID, first name, last name, email address, and phone number. The results are sorted alphabetically by last name and first name.
+
+Managerial Relevance: Managers use this query to maintain an up-to-date customer directory. It supports customer outreach, verifies stored contact information, and helps ensure accurate records for communication and service.
+
+  2. Query 2 - Simple Question: What products does the business carry? Why it matters: A manager may want a current list of products for catalog review, sales planning, or inventory coordination.
 
 SELECT productID, productName, productType FROM Products ORDER BY productType, productName;
 
-Query 3 - Simple Question: What suppliers are in the system? Why it matters: A manager may need a supplier directory when reviewing vendor relationships or sourcing issues.
+Query Response: 
+
+Natural Language Description:This query lists all products, including product ID, name, and type. The results are organized by product type and then alphabetically by product name.
+
+Managerial Relevance:Managers can review the full product catalog to support sales planning, marketing strategies, and inventory management. It ensures the business has a clear understanding of its offerings.
+
+  3. Query 3 - Simple Question: What suppliers are in the system? Why it matters: A manager may need a supplier directory when reviewing vendor relationships or sourcing issues.
 
 SELECT SupplierID, supName FROM Suppliers ORDER BY supName;
 
-Query 4 - Simple Question: What store locations are recorded in the database? Why it matters: A manager may want to review all operating locations for staffing or supplier coordination.
+Query Response:
+
+Natural Language Description:This query retrieves all suppliers along with their IDs and names, sorted alphabetically.
+
+Managerial Relevance:Managers use this to evaluate vendor relationships, identify sourcing options, and confirm supplier records when making purchasing or supply chain decisions.
+
+  4. Query 4 - Simple Question: What store locations are recorded in the database? Why it matters: A manager may want to review all operating locations for staffing or supplier coordination.
 
 SELECT LocationID, city, state, areaCode FROM Store Location ORDER BY state, city;
 
-Query 5 - Complex Question: Which customers have generated the most total order revenue? Why it matters: A manager can use this to identify the highest-value customers and focus retention efforts on them.
+Query Response: 
+
+Natural Language Description:This query returns all store locations, including location ID, city, state, and area code. Results are sorted geographically.
+
+Managerial Relevance:Managers can use this to analyze regional operations, allocate resources, coordinate staffing, and ensure all store locations are properly tracked.
+
+5. Query 5 - Complex Question: Which customers have generated the most total order revenue? Why it matters: A manager can use this to identify the highest-value customers and focus retention efforts on them.
 
 SELECT c.customerID, c.firstName, c.lastName, SUM(o.amount) AS total_spent FROM Customers c JOIN Orders o ON c.customerID = o.customerID GROUP BY c.customerID, c.firstName, c.lastName ORDER BY total_spent DESC;
 
-Query 6 - Complex Question: Which products have sold the highest total quantity? Why it matters: A manager can use this to identify top-selling products and make pricing, stocking, and promotion decisions.
+Query Response: 
+
+Natural Language Description:This query joins Customers and Orders to calculate total spending per customer using SUM. Results are grouped by customer and sorted from highest to lowest spending.
+
+Managerial Relevance:Managers can identify high-value customers and prioritize retention strategies, loyalty programs, and personalized marketing to maximize long-term revenue.
+
+  6. Query 6 - Complex Question: Which products have sold the highest total quantity? Why it matters: A manager can use this to identify top-selling products and make pricing, stocking, and promotion decisions.
 
 SELECT p.productID, p.productName, p.productType, SUM(od.orderqty) AS total_quantity_sold FROM Products p JOIN Order Details od ON p.productID = od.productID GROUP BY p.productID, p.productName, p.productType ORDER BY total_quantity_sold DESC;
 
-Query 7 - Complex Question: Which products have generated the most order revenue? Why it matters: A manager can use this to distinguish products that drive revenue, not just volume.
+Query Response:  
+
+Natural Language Description:This query joins Products and Order Details and calculates the total quantity sold for each product using SUM. Results are grouped and ranked by quantity sold.
+
+Managerial Relevance:Managers use this to identify high-demand products, optimize inventory levels, and ensure popular products remain in stock.
+
+  7. Query 7 - Complex Question: Which products have generated the most order revenue? Why it matters: A manager can use this to distinguish products that drive revenue, not just volume.
 
 SELECT p.productID, p.productName, SUM(od.orderPrice * od.orderqty) AS total_product_revenue FROM Products p JOIN Order Details od ON p.productID = od.productID GROUP BY p.productID, p.productName ORDER BY total_product_revenue DESC;
 
-Query 8 - Complex Question: Which products have never been included in any order? Why it matters: A manager can use this to identify underperforming or unused products that may need promotion or discontinuation.
+Query Response:  
+
+Natural Language Description:This query calculates total revenue per product by multiplying price and quantity, then summing across all orders. Results are grouped and sorted by revenue.
+
+Managerial Relevance:Managers can distinguish between products that sell frequently and those that generate the most profit, helping guide pricing, promotions, and product prioritization.
+
+  8. Query 8 - Complex Question: Which products have never been included in any order? Why it matters: A manager can use this to identify underperforming or unused products that may need promotion or discontinuation.
 
 SELECT p.productID, p.productName, p.productType FROM Products p WHERE NOT EXISTS ( SELECT 1 FROM Order Details od WHERE od.productID = p.productID ) ORDER BY p.productName;
 
-Query 9 - Complex Question: Which customers have spent more than the average order amount in total? Why it matters: A manager can use this to identify above-average customers for loyalty offers or targeted marketing.
+Query Response:  
+
+Natural Language Description:This query uses a NOT EXISTS subquery to identify products that do not appear in any order records.
+
+Managerial Relevance:Managers can identify underperforming or inactive products. This helps in deciding whether to promote, discount, or discontinue these items.
+
+  9. Query 9 - Complex Question: Which customers have spent more than the average order amount in total? Why it matters: A manager can use this to identify above-average customers for loyalty offers or targeted marketing.
 
 SELECT c.customerID, c.firstName, c.lastName, SUM(o.amount) AS total_customer_spent FROM Customers c JOIN Orders o ON c.customerID = o.customerID GROUP BY c.customerID, c.firstName, c.lastName HAVING SUM(o.amount) > ( SELECT AVG(amount) FROM Orders ) ORDER BY total_customer_spent DESC;
 
-Query 10 - Complex Question: How many products does each supplier provide to each store location? Why it matters: A manager can use this to evaluate supplier coverage by location and spot sourcing concentration or gaps.
+Query Response:
+
+Natural Language Description: This query calculates total spending per customer and uses a subquery with AVG to filter customers whose total exceeds the average order amount. It also uses HAVING.
+
+Managerial Relevance: Managers can identify above-average customers for targeted marketing campaigns, loyalty rewards, and upselling opportunities.
+
+  10. Query 10 - Complex Question: How many products does each supplier provide to each store location? Why it matters: A manager can use this to evaluate supplier coverage by location and spot sourcing concentration or gaps.
 
 SELECT s.supName, sl.city, sl.state, COUNT(so.productID) AS products_supplied FROM Suppliers s JOIN Supplier Orders so ON s.SupplierID = so.SupplierID JOIN Store Location sl ON so.LocationID = sl.LocationID GROUP BY s.supName, sl.city, sl.state ORDER BY s.supName, sl.state, sl.city;
+
+Query Response: 
+
+Natural Language Description:This query joins Suppliers, Supplier Orders, and Store Location tables and counts how many products each supplier provides to each location.
+
+Managerial Relevance:Managers can evaluate supplier coverage across locations, identify over-reliance on certain suppliers, and detect gaps in supply chain distribution.
+
 ## Database Information
