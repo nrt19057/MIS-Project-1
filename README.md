@@ -6,7 +6,7 @@
 
 
 
-## Team Name
+## Team Members
 Sydney James -  [@srj44873](https://github.com/srj44873)
 
 Mary Earhart -  [@marykearhart](https://github.com/marykearhart)
