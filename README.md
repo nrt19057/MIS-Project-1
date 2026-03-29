@@ -43,6 +43,29 @@ Finally, the Department entity defines different functional areas within the com
 
 Overall, this data model efficiently captures the relationships between customers, transactions, products, suppliers, and employees, while resolving complex many-to-many relationships through associative entities like Product Line, Supplier Orders, and Customer Order Details.
 ## Data Dictionary
+<img width="641" height="496" alt="Screenshot 2026-03-29 at 4 27 11 PM" src="https://github.com/user-attachments/assets/87ed6a7b-8bb0-4e4d-9598-0fc36a83eaca" />
+
+<img width="660" height="406" alt="Screenshot 2026-03-29 at 4 27 44 PM" src="https://github.com/user-attachments/assets/eb48391b-9752-47ca-a987-a6ded5e32890" />
+
+<img width="652" height="440" alt="Screenshot 2026-03-29 at 4 25 25 PM" src="https://github.com/user-attachments/assets/3300f454-2628-4774-832d-78c5da00fea1" />
+
+<img width="648" height="264" alt="Screenshot 2026-03-29 at 4 25 57 PM" src="https://github.com/user-attachments/assets/90f29817-b8ce-4632-bb81-f2c1181f3fd2" />
+
+<img width="680" height="566" alt="Screenshot 2026-03-29 at 4 26 39 PM" src="https://github.com/user-attachments/assets/8ead3a2f-e988-4ded-a997-73f47b4c66b1" />
+
+<img width="673" height="685" alt="Screenshot 2026-03-29 at 4 26 20 PM" src="https://github.com/user-attachments/assets/63f8986b-b936-4e76-9c21-830cc839aa62" />
+
+<img width="656" height="336" alt="Screenshot 2026-03-29 at 4 28 03 PM" src="https://github.com/user-attachments/assets/0b8bd174-71bf-406c-b746-5a77ca98df96" />
+
+<img width="641" height="289" alt="Screenshot 2026-03-29 at 4 29 28 PM" src="https://github.com/user-attachments/assets/8644030b-9c52-47d1-9a65-352731a57021" />
+
+<img width="642" height="430" alt="Screenshot 2026-03-29 at 4 29 48 PM" src="https://github.com/user-attachments/assets/00ad1f08-dbdf-4336-ab01-91adb75bb999" />
+
+<img width="645" height="365" alt="Screenshot 2026-03-29 at 4 30 06 PM" src="https://github.com/user-attachments/assets/ff9e33d1-d6cb-41e4-be94-07d7e1d14c5d" />
+
+<img width="643" height="302" alt="Screenshot 2026-03-29 at 4 30 29 PM" src="https://github.com/user-attachments/assets/c5a17fa4-2fda-4eed-8b50-e705278b1f6c" />
+
+<img width="659" height="248" alt="Screenshot 2026-03-29 at 4 30 49 PM" src="https://github.com/user-attachments/assets/acc3165a-544e-4fab-9658-6e9513fba186" />
 ## Queries
 
 Query 1 - Simple Question: What customers are currently in the database? Why it matters: A manager may want a full customer list for outreach, customer service, or record review.
