@@ -172,3 +172,4 @@ Natural Language Description:This query joins Suppliers, Supplier Orders, and St
 Managerial Relevance:Managers can evaluate supplier coverage across locations, identify over-reliance on certain suppliers, and detect gaps in supply chain distribution.
 
 ## Database Information
+Database Name: Group_21479_G5
