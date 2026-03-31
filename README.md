@@ -43,29 +43,27 @@ Finally, the Department entity defines different functional areas within the com
 
 Overall, this data model efficiently captures the relationships between customers, transactions, products, suppliers, and employees, while resolving complex many-to-many relationships through associative entities like Product Line, Supplier Orders, and Customer Order Details.
 ## Data Dictionary
-<img width="641" height="496" alt="Screenshot 2026-03-29 at 4 27 11 PM" src="https://github.com/user-attachments/assets/87ed6a7b-8bb0-4e4d-9598-0fc36a83eaca" />
+<img width="644" height="495" alt="Screenshot 2026-03-31 at 8 55 28 AM" src="https://github.com/user-attachments/assets/a159e98d-d290-429a-9012-96ed3f97e633" />
 
-<img width="660" height="406" alt="Screenshot 2026-03-29 at 4 27 44 PM" src="https://github.com/user-attachments/assets/eb48391b-9752-47ca-a987-a6ded5e32890" />
+<img width="645" height="390" alt="Screenshot 2026-03-31 at 8 55 49 AM" src="https://github.com/user-attachments/assets/c4bcef76-d1e1-4685-8a57-e3bbb222e99e" />
 
-<img width="652" height="440" alt="Screenshot 2026-03-29 at 4 25 25 PM" src="https://github.com/user-attachments/assets/3300f454-2628-4774-832d-78c5da00fea1" />
+<img width="635" height="439" alt="Screenshot 2026-03-31 at 8 56 04 AM" src="https://github.com/user-attachments/assets/25a52676-9995-4288-8916-3987ff47a638" />
 
-<img width="648" height="264" alt="Screenshot 2026-03-29 at 4 25 57 PM" src="https://github.com/user-attachments/assets/90f29817-b8ce-4632-bb81-f2c1181f3fd2" />
+<img width="637" height="409" alt="Screenshot 2026-03-31 at 8 56 40 AM" src="https://github.com/user-attachments/assets/944dd839-5eb4-4dc8-8ab9-798ca2b20c2b" />
 
-<img width="680" height="566" alt="Screenshot 2026-03-29 at 4 26 39 PM" src="https://github.com/user-attachments/assets/8ead3a2f-e988-4ded-a997-73f47b4c66b1" />
+<img width="661" height="714" alt="Screenshot 2026-03-31 at 8 57 51 AM" src="https://github.com/user-attachments/assets/69b60274-2930-42e7-b68a-aea048288005" />
 
-<img width="673" height="685" alt="Screenshot 2026-03-29 at 4 26 20 PM" src="https://github.com/user-attachments/assets/63f8986b-b936-4e76-9c21-830cc839aa62" />
+<img width="638" height="245" alt="Screenshot 2026-03-31 at 8 58 12 AM" src="https://github.com/user-attachments/assets/1057a2e0-3626-415f-a92a-e3b06161f629" />
 
-<img width="656" height="336" alt="Screenshot 2026-03-29 at 4 28 03 PM" src="https://github.com/user-attachments/assets/0b8bd174-71bf-406c-b746-5a77ca98df96" />
+<img width="642" height="285" alt="Screenshot 2026-03-31 at 8 58 31 AM" src="https://github.com/user-attachments/assets/534819ec-4d87-44e7-aa8c-d0f78cc0825e" />
 
-<img width="641" height="289" alt="Screenshot 2026-03-29 at 4 29 28 PM" src="https://github.com/user-attachments/assets/8644030b-9c52-47d1-9a65-352731a57021" />
+<img width="653" height="534" alt="Screenshot 2026-03-31 at 8 59 02 AM" src="https://github.com/user-attachments/assets/87a8301e-de7f-471b-b822-03efa64a1654" />
 
-<img width="642" height="430" alt="Screenshot 2026-03-29 at 4 29 48 PM" src="https://github.com/user-attachments/assets/00ad1f08-dbdf-4336-ab01-91adb75bb999" />
+<img width="651" height="373" alt="Screenshot 2026-03-31 at 8 59 27 AM" src="https://github.com/user-attachments/assets/b20f6558-0ca5-4833-aac1-ee23d480404d" />
 
-<img width="645" height="365" alt="Screenshot 2026-03-29 at 4 30 06 PM" src="https://github.com/user-attachments/assets/ff9e33d1-d6cb-41e4-be94-07d7e1d14c5d" />
+<img width="641" height="297" alt="Screenshot 2026-03-31 at 8 59 41 AM" src="https://github.com/user-attachments/assets/da65ded0-cd18-48cc-9df6-11b95a8a85f0" />
 
-<img width="643" height="302" alt="Screenshot 2026-03-29 at 4 30 29 PM" src="https://github.com/user-attachments/assets/c5a17fa4-2fda-4eed-8b50-e705278b1f6c" />
-
-<img width="659" height="248" alt="Screenshot 2026-03-29 at 4 30 49 PM" src="https://github.com/user-attachments/assets/acc3165a-544e-4fab-9658-6e9513fba186" />
+<img width="657" height="240" alt="Screenshot 2026-03-31 at 8 59 56 AM" src="https://github.com/user-attachments/assets/91820eaa-d4bd-48f4-9141-082ddd00b9d6" />
 
 ## Queries
 <img width="717" height="336" alt="Screenshot 2026-03-29 at 5 16 21 PM" src="https://github.com/user-attachments/assets/980bfdf3-5a8b-468f-bc49-639a2e572fc1" />
